@@ -1,0 +1,19 @@
+
+    .main{
+        /* background-color: black; */
+        margin: 20px;
+    }
+    .child1,.child2, .child3, .child4{
+    position: relative;
+    display: inline-block;
+    margin-left: 3.6%;
+    }
+    p{
+        background-color: black;
+        color: aliceblue;
+        position: absolute;
+        z-index: 1;
+        top: -14.5px;
+        padding: 10px;
+    }
+

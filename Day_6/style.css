@@ -1,0 +1,174 @@
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+     body{
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        height: 100vh;
+        width: 30%;
+        background-color: black;
+        border: 15px solid rgb(37, 37, 37);
+        border-radius: 20px;
+        overflow: scroll;
+        scrollbar-width: none;
+        overflow-x: hidden;
+        position: relative;
+        }
+    .main-1{
+        position: sticky;
+        top: 0;
+        background-color: rgb(16, 232, 135);
+
+    }
+    .parent-1{
+        height: 10vh;
+        background-color: black;
+        /* border-radius: 10px; */
+        position: sticky;
+
+    }
+    .child-1{
+        display: inline-block;
+        margin-bottom: -50px;
+        /* background-color: #fff; */
+        position: absolute;
+        font-size: 200%;
+        color: #fff;
+    }
+    .child-1 i{
+            margin-right: 10px;
+            margin-bottom: -40;
+
+    }
+    .child-2 img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: -40px;
+        }
+    .child-2{
+        display: inline-block;
+        position: absolute;
+        left: 10%;
+    }
+    .class-3{
+        display: inline-block;
+        position: absolute;
+        left: 25%;
+        top: 35%;
+        font-size: 20px;
+        color: #fff;
+    }
+    .class-4{
+        display: inline-block;
+        position: absolute;
+        left: 70%;
+        top: 25%;
+        font-size: 200%;
+        color: #fff;
+    }
+    .class-5{
+        display: inline-block;
+        position: absolute;
+        left: 82%;
+        top: 25%;
+        font-size: 200%;
+        color: #fff;
+    }
+    .class-6{
+        display: inline-block;
+        position: absolute;
+        left: 90%;
+        top: 25%;
+        font-size: 200%;
+        color: #fff;
+    }
+    
+    .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin-right: 10%;
+            position: absolute;
+            width: 85%;
+            height: 100%;
+        }
+        .chat-input{
+            height: 7vh;
+            background-color: black;
+            position: fixed;
+            z-index: 1;
+            bottom: 2.3vh;
+            width: 27.9%;
+
+        }
+        .chat-input button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #075E54;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            left: 85%;
+            font-size: 22px;
+            width: 15%;
+            height: 100%;
+        }
+.Date{
+    text-align: center;
+    position: sticky;
+    font-size: 11px;
+    top: 10vh;
+}
+.parent-2 span{
+    width: 50px;
+    background-color: black;
+    color: #ddd;
+    top:20px;
+    font-size: 15px;
+
+}
+.a{
+    text-align: right;
+    background-color: greenyellow;
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 10px;
+
+}
+.b{
+    text-align: left;
+    background-color: greenyellow;
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 10px;
+}
+.c{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    font-size: 25px;   
+}
+.d1{
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    transform: rotate(90deg);
+    font-size: 27px; 
+    margin-left: 65%;  
+}
+.d2{
+    position: absolute;
+    z-index: 1;
+    top: 18%;
+    font-size: 27px; 
+    margin-left: 75%;  
+}
