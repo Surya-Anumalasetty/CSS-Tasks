@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        height: 50vh;
+        width: 50vh;
+        border: 3px solid red;
+        display: flex;
+        justify-content: space-between;
+    }.child-1{
+        height: 10vh;
+        width: 10vh;
+        border: 3px solid blue;
+        align-self: flex-start;
+        order: 3;
+        
+    }.child-2{
+        height: 10vh;
+        width: 10vh;
+        border: 3px solid blue;
+        align-self: center;
+        order: 2;
+
+    }.child-3{
+        height: 10vh;
+        width: 10vh;
+        border: 3px solid blue;
+        align-self: flex-end;
+        order: 1;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+    </div>
+</body>
+</html>

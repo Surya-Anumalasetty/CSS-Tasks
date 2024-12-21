@@ -1,0 +1,30 @@
+
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    .main{
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        margin: 0px 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* .a1 .a2 .a3 .a4 .a5 .a6 .a7 .a8 .a9 .a10 .a11{
+        
+    } */
+    input{
+        width: 100%;
+        border-radius: 50px;
+        height: 5vh;
+    }
+    i{
+        z-index: 1;
+        position: absolute;left: 90%;top: 30%;
+        font-size: 1505;
+    }
+    .a6{
+        position: relative;
+    }
