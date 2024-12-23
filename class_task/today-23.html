@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        display: grid;
+        border: 2px solid red;
+        grid-template-columns: repeat(3,33.3%);
+        gap: 10px;
+        text-align: center;
+    }
+    div{
+        padding: 30px;
+    }
+    .child1,.child2, .child3, .child4, .child5, .child6{
+        border: 3px solid blue;
+    }
+    .child1{
+        grid-column-start: 1;
+        grid-column-end:4 ;
+    }
+    .child2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .child3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+    .child4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 9;
+    }
+    .child5{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    .child6{
+        grid-column-start: 1;
+        grid-column-end: 4;   
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child1">Header</div>
+        <div class="child2">Nav</div>
+        <div class="child3">Section</div>
+        <div class="child4">Main</div>
+        <div class="child5">aside</div>
+        <div class="child6">footter</div>
+
+    </div>
+</body>
+</html>
