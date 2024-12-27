@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid child properties</title>
+    <link rel="stylesheet" href="animate.min.css">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #000;
+        color: beige;
+    }
+      
+.child1,.child2, .child3, .child4, .child5, .child6, .child7, .child8, .child9{
+    border: 3px solid blue;
+    padding: 20px;
+    margin: 10px;
+
+
+}
+.class1{
+    display: grid;
+    grid-template-areas: 
+    "header Nav Section Section"
+    "header aside Article Header1"
+    "av1 aside Article Header1"
+    "av1 Main footer Header1"
+    "av1 Main footer Header1";
+}
+.child1{
+    grid-area: header;
+    background-color: red;
+}
+.child2{
+    grid-area: Nav;
+    background-color: skyblue;
+}
+.child3{
+    grid-area: Section;
+    background-color: burlywood;
+}
+.child4{
+    grid-area: Main;
+    background-color: red;
+}
+.child5{
+    grid-area: aside;
+    background-color: bisque;
+    color: #000;
+}
+.child6{
+    grid-area: footer;
+    background-color: skyblue;
+}
+.child7{
+    grid-area: Article;
+    background-color: antiquewhite;
+    color: #000;
+}
+.child8{
+    grid-area: Header1;
+    background-color: #FF000D;
+}
+.child9{
+    grid-area: av1;
+    background-color: antiquewhite;
+    color: #000
+}
+
+
+
+
+/* Headding part start*/
+    @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 7s infinite alternate;
+	stroke-width: 2;
+	stroke: #FF000D;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(42,160,83,0); stroke: rgba(255,0,13,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(42,160,83,0); stroke: rgba(255,0,13,1); }
+	80%  {fill: rgba(42,160,83,0); stroke: rgba(255,0,13,1); stroke-width: 3; }
+	100% {
+		fill: rgba(42,160,83,1); stroke: rgba(255,0,13,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: transparent};
+/* Headding part end  */
+
+</style>
+<body>
+    <div class="main">
+        <!-- headding part start  -->
+        <div class="wrapper">
+            <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    Welcome To My Page 
+                </text>
+            </svg>
+        </div>
+        <!-- headding part End  -->
+    </div>
+    <div class="class1">
+        <div class="child1">Header</div>
+        <div class="child2">Nav</div>
+        <div class="child3">Section</div>
+        <div class="child4">Section1</div>
+        <div class="child5">aside</div>
+        <div class="child6">footer</div>
+        <div class="child8">Header1</div>
+        <div class="child7">Article</div>
+        <div class="child9">Nav-1</div>
+    </div>
+</body>
+</html>
