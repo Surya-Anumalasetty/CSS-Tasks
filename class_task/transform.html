@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .class1:hover~img{
+    transition: all 2s;
+    transform: translate(100px,100px);
+}
+.class2:hover~img{
+    transition: all 2s;
+    transform: scale(1.5);
+}
+.class3:hover~img{
+    transition: all 2s;
+    transform: rotate(180deg);
+}
+.class4:hover~img{
+    transition: all 2s;
+    transform: skew(20deg,20deg);
+}
+img{
+    margin-top: 10%;
+}
+div{
+    padding: 20px;
+}
+</style>
+<body>
+    <div class="class1">Transform</div>
+    <div class="class2">Scale</div>
+    <div class="class3">Rotate</div>
+    <div class="class4">Skew</div>
+    <img src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-600nw-2212935531.jpg" alt="">
+</body>
+</html>
