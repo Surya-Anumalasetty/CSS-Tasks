@@ -35,12 +35,11 @@ body {
 
 img {
     text-align: center;
-
     border-radius: 100%;
     height: 300px;
     width: 300px;
     margin: 0 auto;
-    transform: rotate(3600deg);
+    transform: rotate(360deg);
     animation: rotate 10s .1s infinite linear;
     box-shadow: 1px 1px 10px white;
 }
@@ -54,7 +53,6 @@ img {
 .inc_dec {
     height: 200px;
     width: 50%;
-    /* background-color: aliceblue; */
     display: grid;
     grid-template-columns: repeat(8, auto);
 }
@@ -69,7 +67,6 @@ img {
 .inc_dec8 {
     width: 50%;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    ;
     animation: jump 1s .1s infinite ease-in reverse;
     margin: 0px auto;
 }
